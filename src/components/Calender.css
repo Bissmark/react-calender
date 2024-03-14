@@ -1,0 +1,51 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.calender {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 7 - 10px); /* Adjust width to fit 7 boxes per line */
+    background-color:indianred;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 250px;
+    height: 75px;
+    cursor: pointer;
+    color: white;
+}
+
+.selected {
+    border: 5px solid black;
+    box-shadow: 0 0 10px #ffcc00;
+}
